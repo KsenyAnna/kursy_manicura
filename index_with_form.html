@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6571435f7.js" crossorigin="anonymous"></script>    
+    <title>Уже сотый первый сайт)</title>
+</head>
+<body>
+
+    <header class="site-header clearfix">
+        <h1 class="myclass"><a href="index.html">ksennanail</a></h1>
+        <nav id="main-menu">
+            <ul>
+                <li><a href="index_about_me.html">Обо мне</a></li>
+                <li><a href="index_with_form.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>       <!-- Основная и главная информация нашей страницы -->
+        <section class="infosite">      <!--  В теге секции неважная информация -->
+            <h1>Заполните форму ниже и мы с вами свяжемся</h1>
+        </section>
+        <div class="wrapper-col clearfix">      
+            <section class="col-main">
+                <form method="post" enctype="application/x-www-form-urlencoded" action="mailto:ksenalove.96@gmail.com">
+                    <p>
+                        <label>Ваше имя:
+                             <input name="custname" placeholder="Введите имя" required>    <!--required означает, что данное поле обязательное -->
+                        </label>            
+                    </p>
+                    <p>
+                        <label>Телефон:
+                            <input type="text" name="custtel" placeholder="+7(999)999-99-99">
+                        </label>            
+                    </p>
+                    <p>
+                        <label>E-mail:
+                            <input type="email" name="custemail" placeholder="Введите E-mail">
+                        </label>            
+                    </p>
+                    <p>
+                        <label>Есть опыт в маникюре?:
+                            <select name="custtype">
+                                <option value="Business">Да</option>
+                                <option value="Customer">Нет</option>
+                            </select>
+                        </label>            
+                    </p>
+                    <fieldset>
+                        <legend> Хочу на курс  </legend>       <!--  ниже обязательно указать всем инпутам одинаковое имя, чтобы выбрать моно было только один из них -->
+                        <p>
+                            <label>
+                                <input type="radio" name="size" value="small"> Базовый
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="size" value="medium"> Повышение
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="radio" name="size" value="larhe"> Дизайны
+                            </label>
+                        </p>
+                    </fieldset>
+
+                        
+                        <p>
+                            <label>Оставить комментарий 
+                                 <textarea name="comments" cols="50" rows="3" placeholder="Введите комментарий..."></textarea>        <!-- rows это высота строчек по умолчанию, cols это ширина-->
+                            </label>
+                        </p>
+                        <p>
+                            <button>Отправить заявку</button>
+                        </p>                    
+                </form>
+            </section>
+
+            <aside class="col-sidebar">         <!-- В теге асайд второстепенная информация -->
+                <div class="container-form">
+                    <form type="get" action="">
+                       <input type="text" id="search-form"  name="search" placeholder="Поиск">        <!-- имя задавать обязательно, тк данные не будут передаваться на сервер -->
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>    <!-- иконка поиска -->
+                        </button>
+                    </form>
+                </div>
+                <div class="container-category">
+                    <ul class="cat-list">
+                        <li><a href="index.html#kurs_baza">Базовый курс</a></li>
+                        <li><a href="index.html#kurs_pov">Повышение квалификации</a></li>
+                        <li><a href="index.html#kurs_diz">Дизайны</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer id="footer-site">
+        <ul class="widget-social">
+            <li>
+                <a href="" class="fa-brands fa-vk"></a>
+            </li>
+            <li>
+                <a href="" class="fa-brands fa-facebook"></a>
+            </li>
+            <li>
+                <a href="" class="fa-brands fa-instagram"></a>
+            </li>
+            <li>
+                <a href="" class="fa-brands fa-twitter"></a>
+            </li>
+        </ul>
+        <div>
+            <span>&copy; 2022</span>
+            <a href="#toppage">К верху страницы</a>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

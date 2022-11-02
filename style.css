@@ -1,0 +1,244 @@
+.clearfix::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    display: table;
+}
+.clearfix {display: inline-block;}
+*html .clearfix {height: 1%;}
+.clearfix {display: block;}
+
+
+#simple-text {
+    color: rgb(49, 49, 49);
+}
+
+.myclass {
+    font-size: 20px;
+}
+
+.site-header {
+    background: #4a423f;
+    color: #e8dbd3;
+    padding: 20px 30px;
+    box-shadow: 0 2px 2px #756969;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    float: left;
+}
+
+.site-header h1 a {
+    text-decoration: none;
+    color: #e8dbd3;
+}
+
+.site-header h1 a:hover {
+    color: #ED4C8D;
+
+}
+
+#main-menu {
+    float: right;
+}
+
+#main-menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#main-menu ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#main-menu ul li a {           /*  добавила правила для ссылок */
+    text-decoration: none;
+    color: #e8dbd3;
+}
+
+#main-menu ul li a:hover {
+    color: #ED4C8D;
+    cursor: pointer;
+}
+
+.infosite {
+    text-align: center;
+    background: #ccc;    
+    padding: 50px;
+}
+
+.infosite h1 {
+    margin-top: 0;
+    color: rgb(105, 55, 55);
+}
+
+.wrapper-col {
+    width: 90%;
+    background: #fff;
+    margin: auto;
+}
+
+.col-main {
+    width: 70%;
+    float: left;
+    padding-top: 20px;
+}
+
+.col-sidebar {
+    width: 25%;
+    background: #eee;
+    float: right;
+    padding: 20px 2.5%;
+}
+
+#footer-site {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #4a423f;
+    text-align: center;
+}
+
+#footer-site,
+#footer-site  a {          /* белый цвет для ссылок и текста футбара */
+    color: #fff;
+}
+
+#footer-site  a {
+    text-decoration: none;  /* убрала нижнее подчеркивание с ссылки*/
+}
+
+.widget-social li {     
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;    
+}
+
+.widget-social li a:hover {       /*  при наведении меняем цвет с помощью псевдоэлемента hover  */
+    colOr: #f05f40 !important;    /* !important говорит, что это свойство важнее, чем ранее заданный белый цвет ссылки*/
+}
+
+#search-form {
+    width: 125px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ccc ;
+    border-radius: 40px;
+}
+
+.container-form button {
+    background: none;
+    background-color: transparent;
+}
+
+
+/* Category */
+
+.cat-list {
+    padding-left: 0;
+}
+
+.cat-list li {
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.cat-list li a {
+    text-decoration: none;
+    text-transform: uppercase;  /* все капсом */
+    font-weight: bold;
+    color: #36313a;
+    position: relative;    /*  относительно этого элемента задается позиция с befor ниже */
+    padding-left: 10px;     /* чтобы черточка не прилегала к тексту */
+}
+
+.cat-list li a:hover {      /* псевдокласс hover меняет при наведении на ссылки цвет в оранжевый*/
+    color: #ED4C8D;
+}
+
+.cat-list li a:before {    /*  задаю черточку перед ссылкой */
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 3px;
+    left: 0;
+    top: 2;
+    background-color: #36313a;
+}
+
+.cat-list li a:hover:before {
+    background: #ED4C8D;    /* чтобы цвет черточки тоже изменялся при наведении вместе с текстом ссылки  */
+}
+
+.container-category {
+    padding-top: 15px;
+}
+
+/* post list */
+
+.post {
+    border: solid 1px #ccc;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    margin-right: 20px;
+}
+
+.post-header h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    padding-left: 15px;
+}
+
+.post-header h2 a {
+    text-decoration: none;
+    color: #36313a;
+}
+
+.post-header h2 a:hover {
+    color: #ED4C8D;
+}
+
+.post-header img {
+    width: 100%;
+    height: auto;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.post-meta {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow: hidden;
+}
+
+.post-meta a {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #36313a;
+}
+
+.post-meta a:hover {
+    color: #ED4C8D;
+}
+
+.full-post {
+    float: left;
+}
+
+.post-comment {
+    float: right;
+}
